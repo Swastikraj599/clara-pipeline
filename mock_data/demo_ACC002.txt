@@ -1,0 +1,21 @@
+DEMO CALL TRANSCRIPT
+Account: ACC002
+Date: 2024-01-16
+Participants: Clara Sales Rep, Sandra Okonkwo (Operations Manager, Arctic Comfort HVAC)
+
+Rep: Sandra, tell me about Arctic Comfort and what's bringing you to Clara.
+Sandra: We're an HVAC company out of Phoenix, Arizona. Commercial and residential. Technicians are getting woken up for non-emergencies constantly. Someone calls at midnight because their AC isn't cooling as well as they'd like. That's not an emergency.
+Rep: What is a real emergency?
+Sandra: No heat in winter for elderly or infant household, complete AC failure in Phoenix summer above 105 degrees, carbon monoxide alarm, gas smell, system actively leaking refrigerant or water into the building.
+Rep: Everything else waits till morning?
+Sandra: Yes. Collect their info and tell them we'll call first thing.
+Rep: Hours?
+Sandra: Monday through Friday 7am to 6pm, Saturday 8am to 2pm. Mountain Standard Time. We don't observe daylight saving - Arizona thing.
+Rep: Emergency routing?
+Sandra: Call our emergency line at 602-555-0177. That rings a rotation of on-call techs.
+Rep: Office address?
+Sandra: 8834 West Camelback Road, Phoenix AZ 85037.
+Rep: Software?
+Sandra: ServiceTitan. Pretty heavily integrated.
+Rep: If transfer fails?
+Sandra: Collect name, number, address and tell them a tech will call within 20 minutes. That's our SLA.

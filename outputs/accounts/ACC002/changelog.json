@@ -1,0 +1,100 @@
+{
+  "account_id": "ACC002",
+  "generated_at": "2026-03-04T15:45:39.732293Z",
+  "from_version": "v1",
+  "to_version": "v2",
+  "changes": [
+    "Changed business hours to include Saturday end time and timezone details because onboarding call confirmed",
+    "Added heat pump emergency definition because onboarding call introduced new emergency scenario",
+    "Updated call transfer rules with 40 second timeout and 2 retries because onboarding call specified",
+    "Added ServiceTitan integration constraints for residential and commercial calls because onboarding call introduced new rules",
+    "Updated voice style to efficient and direct because onboarding call specified",
+    "Removed Saturday end time question from questions or unknowns because onboarding call answered"
+  ],
+  "field_diff": {
+    "questions_or_unknowns": {
+      "v1": [
+        "Saturday end time",
+        "Fallback emergency routing",
+        "Office hours flow summary"
+      ],
+      "v2": [
+        "Fallback emergency routing",
+        "Office hours flow summary"
+      ]
+    },
+    "voice_style": {
+      "v1": null,
+      "v2": "Efficient, direct, to the point"
+    },
+    "emergency_definition": {
+      "v1": [
+        "No heat in winter for elderly or infant household",
+        "Complete AC failure in Phoenix summer above 105 degrees",
+        "Carbon monoxide alarm",
+        "Gas smell",
+        "System actively leaking refrigerant or water into the building"
+      ],
+      "v2": [
+        "No heat in winter for elderly or infant household",
+        "Complete AC failure in Phoenix summer above 105 degrees",
+        "Carbon monoxide alarm",
+        "Gas smell",
+        "System actively leaking refrigerant or water into the building",
+        "Heat pump making loud grinding or screeching noise and just stopped working in summer months"
+      ]
+    },
+    "call_transfer_rules": {
+      "v1": {
+        "timeout_seconds": null,
+        "retries": 1,
+        "fail_message": "Collect name, number, address and tell them a tech will call within 20 minutes"
+      },
+      "v2": {
+        "timeout_seconds": 40,
+        "retries": 2,
+        "fail_message": "Collect name, number, address and tell them a tech will call within 20 minutes"
+      }
+    },
+    "integration_constraints": {
+      "v1": [
+        "ServiceTitan"
+      ],
+      "v2": [
+        "ServiceTitan",
+        "Residential calls create ServiceTitan job automatically",
+        "Commercial calls do not create ServiceTitan job automatically"
+      ]
+    },
+    "business_hours": {
+      "v1": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "start": "7am",
+        "end": "6pm",
+        "timezone": "Mountain Standard Time"
+      },
+      "v2": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "start": "7am",
+        "end": "6pm",
+        "saturday_end": "2pm",
+        "timezone": "Mountain Standard Time",
+        "dst_observed": false
+      }
+    }
+  }
+}

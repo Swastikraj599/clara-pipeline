@@ -1,0 +1,57 @@
+{
+  "account_id": "ACC002",
+  "company_name": "Arctic Comfort HVAC",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "start": "7am",
+    "end": "6pm",
+    "saturday_end": "2pm",
+    "timezone": "Mountain Standard Time",
+    "dst_observed": false
+  },
+  "office_address": "8834 West Camelback Road, Phoenix AZ 85037",
+  "services_supported": [
+    "Commercial HVAC",
+    "Residential HVAC"
+  ],
+  "emergency_definition": [
+    "No heat in winter for elderly or infant household",
+    "Complete AC failure in Phoenix summer above 105 degrees",
+    "Carbon monoxide alarm",
+    "Gas smell",
+    "System actively leaking refrigerant or water into the building",
+    "Heat pump making loud grinding or screeching noise and just stopped working in summer months"
+  ],
+  "emergency_routing_rules": {
+    "primary": "602-555-0177",
+    "fallback": "",
+    "timeout_seconds": null,
+    "retries": 1
+  },
+  "non_emergency_routing_rules": "Collect their info and tell them we'll call first thing",
+  "call_transfer_rules": {
+    "timeout_seconds": 40,
+    "retries": 2,
+    "fail_message": "Collect name, number, address and tell them a tech will call within 20 minutes"
+  },
+  "integration_constraints": [
+    "ServiceTitan",
+    "Residential calls create ServiceTitan job automatically",
+    "Commercial calls do not create ServiceTitan job automatically"
+  ],
+  "after_hours_flow_summary": "Collect their info and tell them we'll call first thing",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [
+    "Fallback emergency routing",
+    "Office hours flow summary"
+  ],
+  "voice_style": "Efficient, direct, to the point",
+  "notes": ""
+}

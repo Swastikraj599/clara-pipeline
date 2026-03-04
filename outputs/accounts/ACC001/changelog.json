@@ -1,0 +1,76 @@
+{
+  "account_id": "ACC001",
+  "generated_at": "2026-03-04T15:45:33.304489Z",
+  "from_version": "v1",
+  "to_version": "v2",
+  "changes": [
+    "Changed business hours to include Saturday from 8am to noon because Mike confirmed the updated schedule",
+    "Added call transfer timeout of 30 seconds before trying next number as per Jake's request",
+    "Updated emergency routing rules with a timeout of 30 seconds and a fail message as per Mike's instructions",
+    "Added integration constraint to never create a ServiceTrade job for sprinkler leak calls as per Mike's requirement"
+  ],
+  "field_diff": {
+    "emergency_routing_rules": {
+      "v1": {
+        "primary": "614-555-0192",
+        "fallback": "614-555-0100",
+        "timeout_seconds": null,
+        "retries": 1
+      },
+      "v2": {
+        "primary": "614-555-0192",
+        "fallback": "614-555-0100",
+        "timeout_seconds": 30,
+        "retries": 1
+      }
+    },
+    "call_transfer_rules": {
+      "v1": {
+        "timeout_seconds": null,
+        "retries": 1,
+        "fail_message": "We'll call back within 15 minutes. Get their name, number, and emergency address."
+      },
+      "v2": {
+        "timeout_seconds": 30,
+        "retries": 1,
+        "fail_message": "We'll page the technician. We'll call back within 15 minutes. Get their name, number, and emergency address."
+      }
+    },
+    "integration_constraints": {
+      "v1": [
+        "ServiceTrade"
+      ],
+      "v2": [
+        "ServiceTrade: never create job for sprinkler leak calls"
+      ]
+    },
+    "business_hours": {
+      "v1": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "start": "8am",
+        "end": "5pm",
+        "timezone": "Eastern"
+      },
+      "v2": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "start": "8am",
+        "end": "5pm",
+        "saturday_end": "noon",
+        "timezone": "Eastern"
+      }
+    }
+  }
+}

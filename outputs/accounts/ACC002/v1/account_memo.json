@@ -1,0 +1,52 @@
+{
+  "account_id": "ACC002",
+  "company_name": "Arctic Comfort HVAC",
+  "business_hours": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "start": "7am",
+    "end": "6pm",
+    "timezone": "Mountain Standard Time"
+  },
+  "office_address": "8834 West Camelback Road, Phoenix AZ 85037",
+  "services_supported": [
+    "Commercial HVAC",
+    "Residential HVAC"
+  ],
+  "emergency_definition": [
+    "No heat in winter for elderly or infant household",
+    "Complete AC failure in Phoenix summer above 105 degrees",
+    "Carbon monoxide alarm",
+    "Gas smell",
+    "System actively leaking refrigerant or water into the building"
+  ],
+  "emergency_routing_rules": {
+    "primary": "602-555-0177",
+    "fallback": "",
+    "timeout_seconds": null,
+    "retries": 1
+  },
+  "non_emergency_routing_rules": "Collect their info and tell them we'll call first thing",
+  "call_transfer_rules": {
+    "timeout_seconds": null,
+    "retries": 1,
+    "fail_message": "Collect name, number, address and tell them a tech will call within 20 minutes"
+  },
+  "integration_constraints": [
+    "ServiceTitan"
+  ],
+  "after_hours_flow_summary": "Collect their info and tell them we'll call first thing",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [
+    "Saturday end time",
+    "Fallback emergency routing",
+    "Office hours flow summary"
+  ],
+  "notes": ""
+}

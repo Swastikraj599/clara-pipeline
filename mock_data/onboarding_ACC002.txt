@@ -1,0 +1,17 @@
+ONBOARDING CALL TRANSCRIPT
+Account: ACC002
+Date: 2024-01-23
+Participants: Clara Onboarding Specialist, Sandra Okonkwo
+
+Specialist: Monday to Friday 7-6, Saturday 8-2, Mountain Standard Time, no DST?
+Sandra: Correct. Never adjust for daylight saving.
+Specialist: Transfer timeout?
+Sandra: 40 seconds. Then try one more time. If second attempt fails, give the 20 minute callback promise.
+Specialist: Two attempts, 40 seconds each. ServiceTitan constraints?
+Sandra: For residential calls, create a job in ServiceTitan automatically. For commercial calls, do not create automatically - our commercial team handles manually. Clara should flag it but not create.
+Specialist: How does Clara identify commercial vs residential?
+Sandra: Ask the caller - is this for a home or a business? Simple.
+Specialist: Changes to emergency definitions?
+Sandra: Add one: heat pump making loud grinding or screeching noise and just stopped working - that's an emergency in summer months. Compressor failure. Very expensive if left overnight.
+Specialist: Voice style?
+Sandra: Keep it efficient. Phoenix customers are direct. Don't over-explain. Get to the point.

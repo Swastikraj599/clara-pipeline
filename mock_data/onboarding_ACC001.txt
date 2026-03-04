@@ -1,0 +1,19 @@
+ONBOARDING CALL TRANSCRIPT
+Account: ACC001
+Date: 2024-01-22
+Participants: Clara Onboarding Specialist, Mike Thornton, Jake Pruitt (Lead Tech)
+
+Specialist: Let's lock down the exact configuration for your Clara agent.
+Mike: One thing I forgot - we work Saturdays too. 8am to noon.
+Specialist: So Monday through Friday 8-5, Saturday 8-12, all Eastern?
+Mike: Correct.
+Specialist: Transfer timeout before trying next number?
+Jake: Give me 30 seconds. If I don't pick up, move to dispatch.
+Specialist: Dispatch is 614-555-0100?
+Mike: Yes. If dispatch doesn't answer in 45 seconds, tell caller we're paging the technician, callback in 15 minutes. Get name, callback number, and emergency address first.
+Specialist: ServiceTrade constraints?
+Mike: Important - never create a job in ServiceTrade for sprinkler leak calls. We handle those manually for insurance documentation. Collect the info but don't create the job.
+Specialist: Fire alarm calls?
+Mike: Those are fine to create in ServiceTrade automatically.
+Specialist: Company name for Clara to use?
+Mike: Thornton Fire Protection. Professional but warm - customers are stressed when they call.

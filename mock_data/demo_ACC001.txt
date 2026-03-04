@@ -1,0 +1,21 @@
+DEMO CALL TRANSCRIPT
+Account: ACC001
+Date: 2024-01-15
+Participants: Clara Sales Rep, Mike Thornton (Owner, Thornton Fire Protection)
+
+Rep: Thanks for joining today Mike. Tell me about your current call handling situation.
+Mike: We're a fire protection company based in Columbus, Ohio. We handle fire sprinkler installation, inspection, and emergency service. The big problem is after hours calls - we get emergency calls at 2am and our answering service just takes a message. By the time we call back the customer is furious.
+Rep: What counts as an emergency for you?
+Mike: Sprinkler head discharge, active fire alarm going off, visible smoke or fire, anything actively happening. Broken sprinkler pipe too - water damage waiting to happen.
+Rep: Non-emergencies?
+Mike: Inspection scheduling, quotes, general questions - anything that can wait till morning.
+Rep: Business hours?
+Mike: Monday through Friday, 8am to 5pm Eastern time.
+Rep: Emergency routing?
+Mike: They need our on-call technician immediately. First try Jake at 614-555-0192, if no answer try dispatch at 614-555-0100.
+Rep: Office address?
+Mike: 4521 Industrial Parkway, Columbus OH 43207.
+Rep: Software?
+Mike: ServiceTrade for everything.
+Rep: If transfer fails completely?
+Mike: Tell them we'll call back within 15 minutes. Get their name, number, and emergency address.
